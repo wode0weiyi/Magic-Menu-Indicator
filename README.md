@@ -1,24 +1,16 @@
-# ConfigPrivatePod
-组件化脚本文件
+# Vue 3 + TypeScript + Vite
 
-#使用方法
-1.在一个文件里下载这个文件，比如project文件：
-  git clone git@github.com:wode0weiyi/ConfigPrivatePod.git
-  
-2.将ConfigPrivatePod的template文件夹下Podfile中source 'https://github.com/HGModulizationDemo/PrivatePods.git'改成第一步里面你自己的私有Pod源仓库的repo地址
+This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
 
-3.将ConfigPrivatePod的template文件夹下upload.sh中改成第二步里面你自己的私有Pod源仓库的名字 
+## Recommended IDE Setup
 
-4.在创建一个私有库组件的时候，比如文件结构目录
+- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar)
 
-Project
-  ├── ConfigPrivatePod
-  └── A
-  
- A是需要组件化的文件
- 
-  在githup上面建立好A的repo后，然后cd到ConfigPrivatePod下，执行./config.sh脚本来配置A这个私有Pod。脚本会问你要一些信息，Project Name就是A，要跟你的A工程的目录名一致。HTTPS Repo、SSH Repo网页上都有，Home Page URL就填你A Repo网页的URL就好了。
-  
-  
-  
+## Type Support For `.vue` Imports in TS
 
+Since TypeScript cannot handle type information for `.vue` imports, they are shimmed to be a generic Vue component type by default. In most cases this is fine if you don't really care about component prop types outside of templates. However, if you wish to get actual prop types in `.vue` imports (for example to get props validation when using manual `h(...)` calls), you can enable Volar's Take Over mode by following these steps:
+
+1. Run `Extensions: Show Built-in Extensions` from VS Code's command palette, look for `TypeScript and JavaScript Language Features`, then right click and select `Disable (Workspace)`. By default, Take Over mode will enable itself if the default TypeScript extension is disabled.
+2. Reload the VS Code window by running `Developer: Reload Window` from the command palette.
+
+You can learn more about Take Over mode [here](https://github.com/johnsoncodehk/volar/discussions/471).
